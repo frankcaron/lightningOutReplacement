@@ -39,6 +39,8 @@ In this simple scenario, a seperate web application is embedding an LWR-based si
 
 ![Preview](screenshot.png)
 
+In this example, an LWR-based site has been set up with a Screen Flow that has the above LWC embedded into it. The top-level iFrame page recieves an event and handles it when the LWC within the Flow is loaded. Once the event is received, the screen is updated via JavaScript with the beautiful colored bar at the top. And critically, SLDS has been entirely stripped, allowing us to apply styling without constraints at the container level.
+
 ## Bugs and Issues
 
 Have a bug or an issue with this template? Open an issue against the repo and I'll fix it.
