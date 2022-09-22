@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <style>
+            #framer {
+                width: 50vw;
+                height: 0vh;
+                border: 0;
+            }
+            .bg-colored {
+                background-color: #ff0000;
+            }
+        </style>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                window.addEventListener("message", function(e) {
+                    if (e.data == "ur mans") {
+                        document.getElementById("eventListener").innerText = "Got 'im";
+                        document.getElementById("eventListener").classList.add("bg-colored");
+                        document.getElementById("framer").style.height = "50vh";
+                        //Log
+                        console.log("SF Test: Received event of type selected");
+                    }
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div id="eventListener"><marquee direction="right">Loading...</marquee></div>
+        <iframe id="framer" src="your LWR-based Experience Cloud site>"></iframe>
+    </body>
+</html>
